@@ -17,7 +17,7 @@ class PostTest < ActiveSupport::TestCase
   end
 
   test 'invalid without title' do
-    post = @user.posts.new(title: 'Test Title', description: 'Test Description')
+    post = @user.posts.new(description: 'Test Description')
     refute post.valid?, 'post is valid without an title'
     assert_not_nil post.errors[:title], 'no validation error for title present'
   end

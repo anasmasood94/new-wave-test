@@ -17,7 +17,7 @@ class AuthControllerTest < ActionController::TestCase
 
   test 'sign in with wrong password does not work' do
     post :sign_in, params: { email: 'john@example.com', password: 'pass123' }
-    assert_response 403
+    assert_response 422
   end
 
   test 'sign up successfully' do

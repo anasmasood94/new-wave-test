@@ -7,4 +7,5 @@ Rails.application.routes.draw do
       post :sign_out
     end
   end
+  resources :posts, except: :show
 end

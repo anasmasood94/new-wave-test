@@ -16,8 +16,8 @@ class ApplicationController < ActionController::API
       request&.headers["Authorization"]&.split("Bearer ")&.last
     end
 
-    def render_error message
-      render json: { sucess: false, message: message }, status: 403
+    def render_error message, status=422
+      render json: { sucess: false, message: message }, status: status
     end
 
     def render_success

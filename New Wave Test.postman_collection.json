@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "a6c9e7fb-1c29-4f40-846f-a29ad43fda6b",
+		"name": "New Wave Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/auth/sign_up?first_name=Anas&last_name=Masood&email=user@test.com&password=pass1234&password_confirmation=pass1234",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"sign_up"
+					],
+					"query": [
+						{
+							"key": "first_name",
+							"value": "Anas"
+						},
+						{
+							"key": "last_name",
+							"value": "Masood"
+						},
+						{
+							"key": "email",
+							"value": "user@test.com"
+						},
+						{
+							"key": "password",
+							"value": "pass1234"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "pass1234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Sign In",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/auth/sign_in?email=user@test.com&password=pass1234",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"sign_in"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "user@test.com"
+						},
+						{
+							"key": "password",
+							"value": "pass1234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Sign Out",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer c2894aec72938bd9f6179af830da138d",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/auth/sign_out",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"sign_out"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all the posts for signed in user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Create a post of currently signed in user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Update a post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Add a comment to a post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Get list of comments for a post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Update comment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a comment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}

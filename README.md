@@ -1,24 +1,42 @@
-# README
+# A Simple API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Local Development (Mac/Ubuntu)
 
-Things you may want to cover:
+### Prerequisites
 
-* Ruby version
+Following tools are required to be installed before you start setting up the project:
+* Ruby - 2.7.0
+* bundler
+* Postgresql
 
-* System dependencies
+### Setting Up the project
 
-* Configuration
+Clone the app and in the project directory run these commands
 
-* Database creation
+```
+bundle install
+```
 
-* Database initialization
+After installing all the gems create the DB and run migrations:
 
-* How to run the test suite
+```
+rails db:create
+rails db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+In a terminal window run rails server:
 
-* Deployment instructions
+```
+rails s
+```
 
-* ...
+### Running Test Cases
+
+You can run the test suite with these command:
+
+#### Back-end
+```
+rails test
+```
+
+You can find the documentation of the API end points in the file `New Wave Test.postman_collection.json`. This file is an export from postman so you can import it in the postman to see the documentation properly.
